@@ -1,0 +1,19 @@
+[Unit]
+Description=Siwel Push Daemon (FCM call notifications)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/siwel-push
+Environment=SIWEL_SERVICE_ACCOUNT=/opt/siwel-push/serviceAccountKey.json
+Environment=SIWEL_DATABASE_URL=https://<votre-projet>-default-rtdb.<region>.firebasedatabase.app
+ExecStart=/usr/bin/node /opt/siwel-push/index.js
+Restart=always
+RestartSec=5
+User=ubuntu
+StandardOutput=append:/var/log/siwel-push.log
+StandardError=append:/var/log/siwel-push.log
+
+[Install]
+WantedBy=multi-user.target

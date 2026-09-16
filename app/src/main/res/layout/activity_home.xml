@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="24dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siwel"
+                android:textColor="@color/text_primary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.02"/>
+
+            <TextView
+                android:id="@+id/tvCurrentUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Déconnexion"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La famille"
+        android:textColor="@color/text_muted"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Membres -->
+    <LinearLayout
+        android:id="@+id/containerMembers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+
+    <!-- Bannière rejoindre appel — invisible par défaut -->
+    <LinearLayout
+        android:id="@+id/bannerRejoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_banner"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_status_online"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Appel en cours"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRejoin"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="Rejoindre"
+            android:textSize="13sp"
+            android:textColor="@color/bg_dark"
+            android:textStyle="bold"
+            android:backgroundTint="@color/accent_green"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+    <!-- Bouton appel -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="Appeler la famille"
+        android:textSize="17sp"
+        android:textColor="@color/bg_dark"
+        android:textStyle="bold"
+        android:backgroundTint="@color/accent_green"
+        app:cornerRadius="18dp"
+        app:icon="@drawable/ic_videocam"
+        app:iconGravity="textStart"
+        app:iconTint="@color/bg_dark"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

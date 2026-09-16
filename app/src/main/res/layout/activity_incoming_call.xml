@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_dark"
+    android:padding="32dp">
+
+    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tvAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textSize="42sp"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        android:background="@drawable/bg_avatar_large"/>
+
+    <TextView
+        android:id="@+id/tvCallerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="34sp"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Appel vidéo Siwel"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"/>
+
+    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+    <!-- Boutons répondre / refuser -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="56dp">
+
+        <!-- Refuser -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="72dp">
+
+            <ImageButton
+                android:id="@+id/btnDecline"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_btn_danger"
+                android:src="@drawable/ic_call_end"
+                android:padding="16dp"
+                android:scaleType="centerInside"
+                android:contentDescription="Refuser"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Refuser"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <!-- Répondre -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnAnswer"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_btn_highlight"
+                android:src="@drawable/ic_videocam"
+                android:padding="16dp"
+                android:scaleType="centerInside"
+                android:contentDescription="Répondre"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Répondre"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

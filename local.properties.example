@@ -1,0 +1,6 @@
+# Copier dans local.properties (non versionné) et renseigner vos valeurs.
+sdk.dir=/chemin/vers/Android/Sdk
+siwel.turn.host=<IP ou domaine du serveur coturn>
+siwel.turn.user=<utilisateur coturn>
+siwel.turn.pass=<mot de passe coturn>
+siwel.firebase.url=https://<votre-projet>-default-rtdb.<region>.firebasedatabase.app

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fonds -->
+    <color name="bg_dark">#0B0F0D</color>
+    <color name="bg_surface">#16201B</color>
+    <color name="bg_surface_high">#1E2C25</color>
+    <color name="bg_border">#2A3A31</color>
+    <color name="tile_bg">#070A09</color>
+
+    <!-- Accents (vert émeraude) -->
+    <color name="accent_green">#2EE6A8</color>
+    <color name="accent_green_dark">#1FA67A</color>
+    <color name="accent_green_deep">#0E3D2C</color>
+    <color name="speaking_ring">#34F5B0</color>
+
+    <!-- Texte -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9DB0A6</color>
+    <color name="text_muted">#5E726A</color>
+
+    <!-- États -->
+    <color name="red">#FF4D5E</color>
+    <color name="red_deep">#3D1015</color>
+    <color name="online">#2EE6A8</color>
+    <color name="offline">#52635B</color>
+    <color name="avatar_bg">#16382B</color>
+
+    <!-- Overlays -->
+    <color name="pill_bg">#B3000000</color>
+    <color name="scrim">#99000000</color>
+</resources>
